@@ -11,4 +11,7 @@ import { type Message } from "../../domain/message.js";
  * 5. Has `tool_calls` array on assistant messages for OpenAI-style tool calling
  */
 export declare function loadMessages(filePath: string, sessionId: string): Promise<Message[]>;
+export declare function mapRole(role: string): Message["type"];
+export declare function extractUsage(entry: Record<string, unknown>): Message["usage"];
+export declare function safeJsonParse(s: string): Record<string, unknown>;
 //# sourceMappingURL=loader.d.ts.map

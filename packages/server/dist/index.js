@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { ClaudeCodeProvider, CodexProvider, CursorProvider, GeminiProvider, ClineProvider, AiderProvider, OpenCodeProvider, MyAgentsProvider, } from "@sc/core";
+import { ClaudeCodeProvider, CodexProvider, CursorProvider, GeminiProvider, OpenCodeProvider, MyAgentsProvider, } from "@sc/core";
 import { projectRoutes } from "./routes/projects.js";
 import { sessionRoutes } from "./routes/sessions.js";
 import { searchRoutes } from "./routes/search.js";
@@ -8,8 +8,6 @@ const providers = [
     CodexProvider,
     CursorProvider,
     GeminiProvider,
-    ClineProvider,
-    AiderProvider,
     OpenCodeProvider,
     MyAgentsProvider,
 ];

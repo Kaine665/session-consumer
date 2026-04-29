@@ -37,7 +37,19 @@ function mapEntry(
 
   // Codex stores content as an array directly
   const rawContent = entry.content ?? entry.message;
-  const content = normalizeContent(rawContent);
+
+  // Codex tool_result entries have tool_use_id at the top level, not inside content.
+  // Wrap as a tool_result content block so mergeToolResults can find it.
+  let content;
+  if (role === "tool_result" || entry.type === "tool_result") {
+    content = [{
+      type: "tool_result" as const,
+      tool_use_id: (entry.tool_use_id || entry.toolUseId) as string || "",
+      content: rawContent,
+    }] as Message["content"];
+  } else {
+    content = normalizeContent(rawContent);
+  }
 
   // Codex uses OpenAI-style tool_calls on assistant messages
   const toolCalls = entry.tool_calls as Array<Record<string, unknown>> | undefined;
@@ -93,7 +105,7 @@ function mapEntry(
   });
 }
 
-function mapRole(role: string): Message["type"] {
+export function mapRole(role: string): Message["type"] {
   switch (role) {
     case "user": return "user";
     case "assistant": return "assistant";
@@ -106,7 +118,7 @@ function mapRole(role: string): Message["type"] {
   }
 }
 
-function extractUsage(entry: Record<string, unknown>): Message["usage"] {
+export function extractUsage(entry: Record<string, unknown>): Message["usage"] {
   // Codex stores usage at top level or inside response
   const resp = entry.response as Record<string, unknown> | undefined;
   const usage = (resp?.usage || entry.usage || entry.token_usage) as Record<string, unknown> | undefined;
@@ -121,7 +133,7 @@ function extractUsage(entry: Record<string, unknown>): Message["usage"] {
   };
 }
 
-function safeJsonParse(s: string): Record<string, unknown> {
+export function safeJsonParse(s: string): Record<string, unknown> {
   try { return JSON.parse(s) as Record<string, unknown>; }
   catch { return {}; }
 }

@@ -5,8 +5,6 @@ import {
   CodexProvider,
   CursorProvider,
   GeminiProvider,
-  ClineProvider,
-  AiderProvider,
   OpenCodeProvider,
   MyAgentsProvider,
 } from "@sc/core";
@@ -19,8 +17,6 @@ const providers = [
   CodexProvider,
   CursorProvider,
   GeminiProvider,
-  ClineProvider,
-  AiderProvider,
   OpenCodeProvider,
   MyAgentsProvider,
 ];

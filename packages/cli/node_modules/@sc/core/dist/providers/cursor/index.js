@@ -178,10 +178,12 @@ async function loadSessions(projectPath) {
         return [];
     return scanCursorSessions(cursorDir, projectPath);
 }
-async function loadMessages(filePath, sessionId) {
+export async function loadMessages(filePath, sessionId) {
     // filePath is the .db path, sessionId includes the conversation ID after ':'
-    const [dbPath, convId] = sessionId.includes(":")
-        ? [sessionId.split(":")[0], sessionId.split(":")[1]]
+    // Use lastIndexOf to handle Windows paths (e.g. C:\path\to\chat.db:convId)
+    const lastColon = sessionId.lastIndexOf(":");
+    const [dbPath, convId] = lastColon !== -1
+        ? [sessionId.slice(0, lastColon), sessionId.slice(lastColon + 1)]
         : [filePath, sessionId];
     let Database;
     try {
@@ -207,31 +209,34 @@ async function loadMessages(filePath, sessionId) {
             rows = db.prepare(`SELECT * FROM ${msgTable} ORDER BY rowid`).all();
         }
         for (const row of rows) {
-            const role = (row.role || row.type) || "user";
-            const content = normalizeContent(row.content);
-            messages.push(createMessage({
-                id: row.id || `cursor-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-                parentId: null,
-                sessionId: convId,
-                sourceFile: dbPath,
-                provider: "cursor",
-                type: role === "assistant" ? "assistant" : role === "system" ? "system" : "user",
-                timestamp: normalizeTs(row.timestamp || row.created_at),
-                content,
-                toolUses: [],
-                usage: null,
-                model: row.model ?? null,
-                stopReason: null,
-                costUSD: null,
-                durationMs: null,
-                cwd: null,
-            }));
+            messages.push(mapCursorMessage(row, convId, dbPath));
         }
     }
     finally {
         db.close();
     }
     return messages;
+}
+export function mapCursorMessage(row, convId, dbPath) {
+    const role = (row.role || row.type) || "user";
+    const content = normalizeContent(row.content);
+    return createMessage({
+        id: row.id || `cursor-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+        parentId: null,
+        sessionId: convId,
+        sourceFile: dbPath,
+        provider: "cursor",
+        type: role === "assistant" ? "assistant" : role === "system" ? "system" : "user",
+        timestamp: normalizeTs(row.timestamp || row.created_at),
+        content,
+        toolUses: [],
+        usage: null,
+        model: row.model ?? null,
+        stopReason: null,
+        costUSD: null,
+        durationMs: null,
+        cwd: null,
+    });
 }
 async function search(query, maxResults = 50) {
     const projects = await scanProjects();

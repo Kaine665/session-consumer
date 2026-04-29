@@ -4,8 +4,6 @@ export const PROVIDER_IDS = [
     "codex",
     "cursor",
     "gemini",
-    "cline",
-    "aider",
     "opencode",
     "myagents",
 ];
@@ -14,8 +12,6 @@ export const PROVIDER_DISPLAY_NAMES = {
     codex: "Codex CLI",
     cursor: "Cursor",
     gemini: "Gemini CLI",
-    cline: "Cline",
-    aider: "Aider",
     opencode: "OpenCode",
     myagents: "MyAgents",
 };
@@ -46,17 +42,6 @@ export const PROVIDER_DATA_PATHS = {
                 return null;
             return `${home}/.gemini/history`;
         },
-    },
-    cline: {
-        baseDir: () => {
-            const home = process.env.HOME || process.env.USERPROFILE;
-            if (!home)
-                return null;
-            return `${home}/.cline/tasks`;
-        },
-    },
-    aider: {
-        baseDir: () => null, // Per-project .aider.chat.history.md
     },
     opencode: {
         baseDir: () => {

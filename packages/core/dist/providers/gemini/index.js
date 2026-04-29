@@ -107,7 +107,7 @@ async function loadSessions(projectPath) {
     return sessions;
 }
 // ─── Load messages ──────────────────────────────────────────────────────────
-async function loadMessages(filePath, sessionId) {
+export async function loadMessages(filePath, sessionId) {
     const entries = [];
     await parseJsonl(filePath, (e) => entries.push(e));
     const messages = entries.map((entry) => {
@@ -202,7 +202,7 @@ function findJsonlFiles(dir) {
     walk(dir);
     return results;
 }
-function mapType(t) {
+export function mapType(t) {
     switch (t) {
         case "user": return "user";
         case "assistant":
@@ -211,7 +211,7 @@ function mapType(t) {
         default: return "system";
     }
 }
-function extractUsage(entry) {
+export function extractUsage(entry) {
     const msg = entry.message;
     const usage = (msg?.usage || entry.usage);
     if (!usage)

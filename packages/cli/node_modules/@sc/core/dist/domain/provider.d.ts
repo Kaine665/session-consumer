@@ -1,4 +1,4 @@
-export declare const PROVIDER_IDS: readonly ["claude-code", "codex", "cursor", "gemini", "cline", "aider", "opencode", "myagents"];
+export declare const PROVIDER_IDS: readonly ["claude-code", "codex", "cursor", "gemini", "opencode", "myagents"];
 export type ProviderId = (typeof PROVIDER_IDS)[number];
 export declare const PROVIDER_DISPLAY_NAMES: Record<ProviderId, string>;
 /** Key data directories for each provider. */

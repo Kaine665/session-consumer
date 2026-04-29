@@ -21,7 +21,19 @@ function mapEntry(entry, sourceFile, sessionId) {
     const role = entry.role || "system";
     // Codex stores content as an array directly
     const rawContent = entry.content ?? entry.message;
-    const content = normalizeContent(rawContent);
+    // Codex tool_result entries have tool_use_id at the top level, not inside content.
+    // Wrap as a tool_result content block so mergeToolResults can find it.
+    let content;
+    if (role === "tool_result" || entry.type === "tool_result") {
+        content = [{
+                type: "tool_result",
+                tool_use_id: (entry.tool_use_id || entry.toolUseId) || "",
+                content: rawContent,
+            }];
+    }
+    else {
+        content = normalizeContent(rawContent);
+    }
     // Codex uses OpenAI-style tool_calls on assistant messages
     const toolCalls = entry.tool_calls;
     const toolUses = toolCalls
@@ -72,7 +84,7 @@ function mapEntry(entry, sourceFile, sessionId) {
         leafUuid: null,
     });
 }
-function mapRole(role) {
+export function mapRole(role) {
     switch (role) {
         case "user": return "user";
         case "assistant": return "assistant";
@@ -84,7 +96,7 @@ function mapRole(role) {
         default: return "system";
     }
 }
-function extractUsage(entry) {
+export function extractUsage(entry) {
     // Codex stores usage at top level or inside response
     const resp = entry.response;
     const usage = (resp?.usage || entry.usage || entry.token_usage);
@@ -98,7 +110,7 @@ function extractUsage(entry) {
         serviceTier: usage.service_tier,
     };
 }
-function safeJsonParse(s) {
+export function safeJsonParse(s) {
     try {
         return JSON.parse(s);
     }

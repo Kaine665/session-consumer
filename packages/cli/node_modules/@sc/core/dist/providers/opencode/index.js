@@ -163,12 +163,13 @@ async function loadSessions(projectPath) {
     sessions.sort((a, b) => b.lastModified.localeCompare(a.lastModified));
     return sessions;
 }
-async function loadMessages(filePath, sessionId) {
+export async function loadMessages(filePath, sessionId) {
     const messages = [];
     // Try SQLite
     if (filePath.endsWith(".db")) {
-        const [dbPath, sessId] = sessionId.includes(":")
-            ? [sessionId.split(":")[0], sessionId.split(":")[1]]
+        const lastColon = sessionId.lastIndexOf(":");
+        const [dbPath, sessId] = lastColon !== -1
+            ? [sessionId.slice(0, lastColon), sessionId.slice(lastColon + 1)]
             : [filePath, sessionId];
         try {
             const { default: Database } = await import("better-sqlite3");
@@ -176,28 +177,7 @@ async function loadMessages(filePath, sessionId) {
             try {
                 const rows = db.prepare("SELECT * FROM message WHERE session_id = ? ORDER BY created_at").all(sessId);
                 for (const row of rows) {
-                    const role = (row.role || row.type) || "user";
-                    messages.push(createMessage({
-                        id: row.id || `opencode-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-                        parentId: row.parent_id ?? null,
-                        sessionId: sessId,
-                        sourceFile: dbPath,
-                        provider: "opencode",
-                        type: role === "assistant" ? "assistant" : role === "system" ? "system" : "user",
-                        timestamp: normalizeTs(row.created_at || row.timestamp),
-                        content: typeof row.content === "string"
-                            ? [{ type: "text", text: row.content }]
-                            : row.content
-                                ? [JSON.parse(row.content)]
-                                : [],
-                        toolUses: [],
-                        usage: null,
-                        model: row.model ?? null,
-                        stopReason: null,
-                        costUSD: null,
-                        durationMs: null,
-                        cwd: null,
-                    }));
+                    messages.push(mapOpenCodeRow(row, sessId, dbPath));
                 }
             }
             finally {
@@ -239,6 +219,30 @@ async function loadMessages(filePath, sessionId) {
         catch { /* skip */ }
     }
     return messages;
+}
+export function mapOpenCodeRow(row, sessId, dbPath) {
+    const role = (row.role || row.type) || "user";
+    return createMessage({
+        id: row.id || `opencode-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+        parentId: row.parent_id ?? null,
+        sessionId: sessId,
+        sourceFile: dbPath,
+        provider: "opencode",
+        type: role === "assistant" ? "assistant" : role === "system" ? "system" : "user",
+        timestamp: normalizeTs(row.created_at || row.timestamp),
+        content: typeof row.content === "string"
+            ? [{ type: "text", text: row.content }]
+            : row.content
+                ? [JSON.parse(row.content)]
+                : [],
+        toolUses: [],
+        usage: null,
+        model: row.model ?? null,
+        stopReason: null,
+        costUSD: null,
+        durationMs: null,
+        cwd: null,
+    });
 }
 async function search(query, maxResults = 50) {
     const projects = await scanProjects();

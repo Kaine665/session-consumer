@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { Command } from "commander";
-import { ClaudeCodeProvider, CodexProvider, CursorProvider, GeminiProvider, ClineProvider, AiderProvider, OpenCodeProvider, MyAgentsProvider, } from "@sc/core";
+import { ClaudeCodeProvider, CodexProvider, CursorProvider, GeminiProvider, OpenCodeProvider, MyAgentsProvider, } from "@sc/core";
 import { listProjects, listSessions } from "./commands/list.js";
 import { viewSession } from "./commands/view.js";
 import { searchCommand } from "./commands/search.js";
@@ -9,8 +9,6 @@ const providers = [
     CodexProvider,
     CursorProvider,
     GeminiProvider,
-    ClineProvider,
-    AiderProvider,
     OpenCodeProvider,
     MyAgentsProvider,
 ];

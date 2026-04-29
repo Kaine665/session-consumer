@@ -17,8 +17,7 @@ export { ClaudeCodeProvider } from "./providers/claude-code/index.js";
 export { CodexProvider } from "./providers/codex/index.js";
 export { CursorProvider } from "./providers/cursor/index.js";
 export { GeminiProvider } from "./providers/gemini/index.js";
-export { ClineProvider } from "./providers/cline/index.js";
-export { AiderProvider } from "./providers/aider/index.js";
+
 export { OpenCodeProvider } from "./providers/opencode/index.js";
 export { MyAgentsProvider } from "./providers/myagents/index.js";
 

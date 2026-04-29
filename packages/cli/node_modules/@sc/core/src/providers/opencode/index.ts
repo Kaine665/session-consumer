@@ -178,13 +178,14 @@ async function loadSessions(projectPath: string): Promise<Session[]> {
   return sessions;
 }
 
-async function loadMessages(filePath: string, sessionId: string): Promise<Message[]> {
+export async function loadMessages(filePath: string, sessionId: string): Promise<Message[]> {
   const messages: Message[] = [];
 
   // Try SQLite
   if (filePath.endsWith(".db")) {
-    const [dbPath, sessId] = sessionId.includes(":")
-      ? [sessionId.split(":")[0], sessionId.split(":")[1]]
+    const lastColon = sessionId.lastIndexOf(":");
+    const [dbPath, sessId] = lastColon !== -1
+      ? [sessionId.slice(0, lastColon), sessionId.slice(lastColon + 1)]
       : [filePath, sessionId];
 
     try {
@@ -197,28 +198,7 @@ async function loadMessages(filePath: string, sessionId: string): Promise<Messag
         ).all(sessId) as Array<Record<string, unknown>>;
 
         for (const row of rows) {
-          const role = (row.role || row.type) as string || "user";
-          messages.push(createMessage({
-            id: (row.id as string) || `opencode-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-            parentId: (row.parent_id as string) ?? null,
-            sessionId: sessId,
-            sourceFile: dbPath,
-            provider: "opencode",
-            type: role === "assistant" ? "assistant" : role === "system" ? "system" : "user",
-            timestamp: normalizeTs(row.created_at || row.timestamp),
-            content: typeof row.content === "string"
-              ? [{ type: "text", text: row.content }]
-              : row.content
-                ? [JSON.parse(row.content as string)]
-                : [],
-            toolUses: [],
-            usage: null,
-            model: (row.model as string) ?? null,
-            stopReason: null,
-            costUSD: null,
-            durationMs: null,
-            cwd: null,
-          }));
+          messages.push(mapOpenCodeRow(row, sessId, dbPath));
         }
       } finally {
         db.close();
@@ -260,6 +240,35 @@ async function loadMessages(filePath: string, sessionId: string): Promise<Messag
   }
 
   return messages;
+}
+
+export function mapOpenCodeRow(
+  row: Record<string, unknown>,
+  sessId: string,
+  dbPath: string,
+): Message {
+  const role = (row.role || row.type) as string || "user";
+  return createMessage({
+    id: (row.id as string) || `opencode-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+    parentId: (row.parent_id as string) ?? null,
+    sessionId: sessId,
+    sourceFile: dbPath,
+    provider: "opencode",
+    type: role === "assistant" ? "assistant" : role === "system" ? "system" : "user",
+    timestamp: normalizeTs(row.created_at || row.timestamp),
+    content: typeof row.content === "string"
+      ? [{ type: "text", text: row.content }]
+      : row.content
+        ? [JSON.parse(row.content as string)]
+        : [],
+    toolUses: [],
+    usage: null,
+    model: (row.model as string) ?? null,
+    stopReason: null,
+    costUSD: null,
+    durationMs: null,
+    cwd: null,
+  });
 }
 
 async function search(query: string, maxResults = 50): Promise<Message[]> {

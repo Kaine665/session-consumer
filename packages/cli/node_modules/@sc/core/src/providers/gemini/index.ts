@@ -125,7 +125,7 @@ async function loadSessions(projectPath: string): Promise<Session[]> {
 
 // ─── Load messages ──────────────────────────────────────────────────────────
 
-async function loadMessages(filePath: string, sessionId: string): Promise<Message[]> {
+export async function loadMessages(filePath: string, sessionId: string): Promise<Message[]> {
   const entries: Record<string, unknown>[] = [];
   await parseJsonl(filePath, (e) => entries.push(e));
 
@@ -220,7 +220,7 @@ function findJsonlFiles(dir: string): string[] {
   return results;
 }
 
-function mapType(t: string): Message["type"] {
+export function mapType(t: string): Message["type"] {
   switch (t) {
     case "user": return "user";
     case "assistant":
@@ -230,7 +230,7 @@ function mapType(t: string): Message["type"] {
   }
 }
 
-function extractUsage(entry: Record<string, unknown>): Message["usage"] {
+export function extractUsage(entry: Record<string, unknown>): Message["usage"] {
   const msg = entry.message as Record<string, unknown> | undefined;
   const usage = (msg?.usage || entry.usage) as Record<string, unknown> | undefined;
   if (!usage) return null;
