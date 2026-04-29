@@ -8,7 +8,9 @@
     "dev:server": "pnpm --filter @sc/server dev",
     "dev:web": "pnpm --filter @sc/web dev",
     "build": "pnpm -r build",
-    "typecheck": "pnpm -r typecheck"
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "verify": "pnpm typecheck && pnpm build && pnpm test"
   },
   "engines": {
     "node": ">=20.0.0"
