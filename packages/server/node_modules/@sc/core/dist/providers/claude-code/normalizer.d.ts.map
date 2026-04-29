@@ -1,0 +1,1 @@
+{"version":3,"file":"normalizer.d.ts","sourceRoot":"","sources":["../../../src/providers/claude-code/normalizer.ts"],"names":[],"mappings":"AAEA,mEAAmE;AACnE,wBAAgB,UAAU,CAAC,IAAI,EAAE,MAAM,GAAG,MAAM,CAU/C;AAED,gEAAgE;AAChE,wBAAgB,UAAU,CAAC,WAAW,EAAE,MAAM,GAAG,MAAM,CAQtD;AAED,oDAAoD;AACpD,wBAAgB,aAAa,CAAC,WAAW,EAAE,MAAM,EAAE,IAAI,EAAE,MAAM,GAAG,MAAM,CAGvE"}

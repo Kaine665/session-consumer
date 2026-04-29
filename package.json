@@ -1,0 +1,22 @@
+{
+  "name": "session-consumer",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Multi-source AI session aggregator — normalize, browse, and search conversations across AI coding tools",
+  "scripts": {
+    "dev:cli": "pnpm --filter @sc/cli dev",
+    "dev:server": "pnpm --filter @sc/server dev",
+    "dev:web": "pnpm --filter @sc/web dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "esbuild"
+    ]
+  }
+}

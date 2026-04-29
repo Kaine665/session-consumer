@@ -1,0 +1,30 @@
+{
+  "name": "@sc/core",
+  "version": "0.1.0",
+  "description": "Domain models, provider adapters, and services for multi-source AI session aggregation",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./domain/*": "./dist/domain/*.js",
+    "./providers/*": "./dist/providers/*.js",
+    "./services/*": "./dist/services/*.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.5"
+  }
+}
