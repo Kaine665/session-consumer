@@ -18,7 +18,14 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "better-sqlite3",
-      "esbuild"
+      "esbuild",
+      "simple-git-hooks"
     ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm verify"
+  },
+  "devDependencies": {
+    "simple-git-hooks": "^2.13.1"
   }
 }
