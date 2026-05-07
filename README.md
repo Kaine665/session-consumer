@@ -117,6 +117,10 @@ With the bundled [Skill](./packages/mcp/skill/SKILL.md), Claude Code can autonom
 | Gemini | `~/.gemini/sessions/` | `gemini` CLI available |
 | OpenCode | `~/.opencode/history/` | OpenCode paths exist |
 
+## Design Memory
+
+关键架构讨论与设计决策 → [memory/README.md](memory/README.md)
+
 ## License
 
 Apache-2.0
