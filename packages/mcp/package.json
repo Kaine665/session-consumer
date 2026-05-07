@@ -1,0 +1,22 @@
+{
+  "name": "@sc/mcp",
+  "version": "0.1.0",
+  "description": "MCP server for session-consumer — exposes session data as tools for Claude Code",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sc/core": "workspace:*",
+    "@sc/daily": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

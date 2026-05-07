@@ -1,0 +1,514 @@
+{
+  "claude-code": {
+    "slugs": [
+      "c--Projects-ELApp",
+      "C--Projects-ELApp--worktrees-59631478-59631478-fix-chapter-white-screen",
+      "C--Projects-ELApp--worktrees-orch-3-paau-habit-data-layer",
+      "C--Projects-ELApp--worktrees-orch-3-paau-habit-pages",
+      "C--Projects-ELApp--worktrees-orch-3-paau-habit-ui-components",
+      "C--Users-17130",
+      "C--Users-17130--myagents-projects",
+      "C--Users-17130--myagents-projects------",
+      "C--Users-17130--myagents-projects-mino",
+      "C--Users-17130--myagents-projects-mino-3",
+      "C--Users-17130--proma-agent-workspaces-default-a9d0a6a8-2287-4e4e-9fee-f62e484547d4",
+      "C--Users-17130-Desktop-ProgrammingProjects-personal-projects-02-Experiments",
+      "c--Users-17130-Desktop-ProgrammingProjects-personal-projects-03-In-Development",
+      "C--Users-17130-Desktop-ProgrammingProjects-personal-projects-03-In-Development-lifecard",
+      "C--Users-17130-Desktop-ProgrammingProjects-personal-projects-03-In-Development-matters",
+      "C--Users-17130-Desktop-ProgrammingProjects-personal-projects-03-In-Development-voice-claude",
+      "C--Users-17130-Desktop-ProgrammingProjects-personal-projects-05-Libraries",
+      "C--Users-17130-Desktop-ProgrammingProjects-personal-projects-06-Archived",
+      "C--Users-17130-Desktop-ProgrammingProjects-personal-projects-fetch-video",
+      "C--Users-17130-Desktop-ProgrammingProjects-personal-projects-knowledge-lib",
+      "C--Users-17130-Desktop-ProgrammingProjects-personal-projects-lifecard",
+      "d--Desktop-ProgrammingProjects-personal-projects-03-In-Development",
+      "d--Desktop-ProgrammingProjects-personal-projects-03-In-Development-aha-catcher-frictionless",
+      "D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-habit-tracker-experiment",
+      "d--Desktop-ProgrammingProjects-personal-projects-03-In-Development-learning-archive",
+      "D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-learning-archive-library-books",
+      "D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-learning-archive-probing-tasks",
+      "D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-matters",
+      "d--Desktop-ProgrammingProjects-personal-projects-03-In-Development-OpenHands",
+      "d--Desktop-ProgrammingProjects-personal-projects-03-In-Development-projct-pilot",
+      "D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-projct-pilot--worktrees-dev",
+      "d--Desktop-ProgrammingProjects-personal-projects-03-In-Development-projct-pilot-dev",
+      "d--Desktop-ProgrammingProjects-personal-projects-03-In-Development-project-pilot",
+      "D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-project-pilot-agent-teams-probe-260303",
+      "D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-project-pilot-develop-static",
+      "D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-project-pilot-develop-static--claude-worktrees-agent-dialogue",
+      "D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-project-pilot-test",
+      "D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-react-blog"
+    ],
+    "count": 38
+  },
+  "myagents": {
+    "registry": [
+      {
+        "name": "产品定位师",
+        "path": "C:\\Users\\17130\\.myagents\\projects\\产品定位师"
+      },
+      {
+        "name": "mino-3",
+        "path": "C:\\Users\\17130\\.myagents\\projects\\mino-3"
+      },
+      {
+        "name": "mino",
+        "path": "C:\\Users\\17130\\.myagents\\projects\\mino"
+      }
+    ],
+    "cwdSamples": [],
+    "totalSessions": 18
+  },
+  "codex": {
+    "dateDirs": [
+      "2026",
+      "2026\\03",
+      "2026\\03\\11",
+      "2026\\03\\12",
+      "2026\\03\\13",
+      "2026\\03\\14",
+      "2026\\03\\16",
+      "2026\\03\\17",
+      "2026\\03\\18",
+      "2026\\03\\19",
+      "2026\\03\\20",
+      "2026\\03\\21",
+      "2026\\03\\22",
+      "2026\\03\\23",
+      "2026\\03\\24",
+      "2026\\03\\25",
+      "2026\\03\\28",
+      "2026\\04",
+      "2026\\04\\23",
+      "2026\\04\\24",
+      "2026\\04\\26",
+      "2026\\04\\30"
+    ],
+    "sampleFiles": [
+      {
+        "file": "2026\\04\\30\\rollout-2026-04-30T11-56-17-019ddc87-c1ca-73f2-af49-f1832b1de574.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\market\\zhijian-app",
+        "session_id": "019ddc87-c1ca-73f2-af49-f1832b1de574"
+      },
+      {
+        "file": "2026\\04\\26\\rollout-2026-04-26T13-44-20-019dc851-3e66-72a2-8899-07aa62d9e441.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot",
+        "session_id": "019dc851-3e66-72a2-8899-07aa62d9e441"
+      },
+      {
+        "file": "2026\\04\\24\\rollout-2026-04-24T12-58-08-019dbdda-391e-7f32-89b8-4bdf24dac300.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot",
+        "session_id": "019dbdda-391e-7f32-89b8-4bdf24dac300"
+      },
+      {
+        "file": "2026\\04\\24\\rollout-2026-04-24T13-05-19-019dbde0-cae8-7ae2-8572-d52e3aa57aa7.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot",
+        "session_id": "019dbde0-cae8-7ae2-8572-d52e3aa57aa7"
+      },
+      {
+        "file": "2026\\04\\23\\rollout-2026-04-23T11-28-32-019db861-d564-7393-b5b0-6e508f55d3fc.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot",
+        "session_id": "019db861-d564-7393-b5b0-6e508f55d3fc"
+      },
+      {
+        "file": "2026\\04\\23\\rollout-2026-04-23T11-48-47-019db874-6035-7440-8ab7-b6f87bd74f9d.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot",
+        "session_id": "019db874-6035-7440-8ab7-b6f87bd74f9d"
+      },
+      {
+        "file": "2026\\04\\23\\rollout-2026-04-23T12-05-55-019db884-0d76-7340-ab7e-457e0c51307b.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot",
+        "session_id": "019db884-0d76-7340-ab7e-457e0c51307b"
+      },
+      {
+        "file": "2026\\03\\28\\rollout-2026-03-28T17-25-10-019d33c2-ff66-7d50-9494-2c1e4bd5ecdc.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot",
+        "session_id": "019d33c2-ff66-7d50-9494-2c1e4bd5ecdc"
+      },
+      {
+        "file": "2026\\03\\25\\rollout-2026-03-25T09-45-29-019d22ab-109e-7120-8cda-f69be96b41ef.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot\\develop-static",
+        "session_id": "019d22ab-109e-7120-8cda-f69be96b41ef"
+      },
+      {
+        "file": "2026\\03\\25\\rollout-2026-03-25T09-47-03-019d22ac-80f4-7f40-ad65-af825328269c.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot\\develop-static",
+        "session_id": "019d22ac-80f4-7f40-ad65-af825328269c"
+      },
+      {
+        "file": "2026\\03\\25\\rollout-2026-03-25T09-47-18-019d22ac-b8b6-77e1-978c-1968be743f21.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot\\develop-static",
+        "session_id": "019d22ac-b8b6-77e1-978c-1968be743f21"
+      },
+      {
+        "file": "2026\\03\\25\\rollout-2026-03-25T09-49-58-019d22af-2c50-73a3-a87e-a484bc4e5168.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot\\develop-static",
+        "session_id": "019d22af-2c50-73a3-a87e-a484bc4e5168"
+      },
+      {
+        "file": "2026\\03\\25\\rollout-2026-03-25T09-58-48-019d22b7-4212-7f71-b525-b2313e43ea55.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot\\develop-static",
+        "session_id": "019d22b7-4212-7f71-b525-b2313e43ea55"
+      },
+      {
+        "file": "2026\\03\\25\\rollout-2026-03-25T10-00-21-019d22b8-ad45-7303-934d-158fb110b457.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot\\develop-static",
+        "session_id": "019d22b8-ad45-7303-934d-158fb110b457"
+      },
+      {
+        "file": "2026\\03\\25\\rollout-2026-03-25T10-07-37-019d22bf-5288-70f1-b150-e3f10a7c99cb.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot\\develop-static",
+        "session_id": "019d22bf-5288-70f1-b150-e3f10a7c99cb"
+      },
+      {
+        "file": "2026\\03\\25\\rollout-2026-03-25T10-20-20-019d22ca-fa68-7670-8419-e8d05ee5b3c1.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot\\develop-static",
+        "session_id": "019d22ca-fa68-7670-8419-e8d05ee5b3c1"
+      },
+      {
+        "file": "2026\\03\\25\\rollout-2026-03-25T10-24-24-019d22ce-b160-7c43-9453-6eda56beafe8.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot\\develop-static",
+        "session_id": "019d22ce-b160-7c43-9453-6eda56beafe8"
+      },
+      {
+        "file": "2026\\03\\25\\rollout-2026-03-25T11-35-55-019d2310-2ca1-72a1-be5a-331f657004dd.jsonl",
+        "project_name": null,
+        "cwd": "d:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot",
+        "session_id": "019d2310-2ca1-72a1-be5a-331f657004dd"
+      },
+      {
+        "file": "2026\\03\\25\\rollout-2026-03-25T17-04-02-019d243c-9276-7020-8b24-9c80067da890.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot",
+        "session_id": "019d243c-9276-7020-8b24-9c80067da890"
+      },
+      {
+        "file": "2026\\03\\25\\rollout-2026-03-25T17-11-41-019d2443-9429-7e81-bfc8-a6de573ba345.jsonl",
+        "project_name": null,
+        "cwd": "d:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot",
+        "session_id": "019d2443-9429-7e81-bfc8-a6de573ba345"
+      },
+      {
+        "file": "2026\\03\\25\\rollout-2026-03-25T17-36-35-019d245a-5ec4-7843-a8aa-931d33e4ecb2.jsonl",
+        "project_name": null,
+        "cwd": "d:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot",
+        "session_id": "019d245a-5ec4-7843-a8aa-931d33e4ecb2"
+      },
+      {
+        "file": "2026\\03\\25\\rollout-2026-03-25T17-41-06-019d245e-80d4-7f31-9ac5-dde2267ae009.jsonl",
+        "project_name": null,
+        "cwd": "D:\\Desktop\\ProgrammingProjects\\personal-projects\\03-In-Development\\project-pilot",
+        "session_id": "019d245e-80d4-7f31-9ac5-dde2267ae009"
+      }
+    ],
+    "hasArchived": false
+  },
+  "cursor": {
+    "slugs": [
+      "c-Projects-ELApp",
+      "c-Users-17130-AppData-Roaming-Cursor-Workspaces-1767683843515-workspace-json",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-Learn-Agent",
+      "c-Users-17130-Desktop-Projects-Learn-Agent",
+      "d-Desktop-ProgrammingProjects-personal-projects-01-Learning-AI-Architect",
+      "d-Desktop-ProgrammingProjects-personal-projects-02-Experiments",
+      "d-Desktop-ProgrammingProjects-personal-projects-02-Experiments-little-gold-teacher",
+      "d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-matters",
+      "d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-projct-pilot",
+      "d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-projct-pilot-dev",
+      "d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-project-pilot",
+      "empty-window",
+      "1775207545903",
+      "1775540178971",
+      "1775992263690",
+      "1776240776655",
+      "1776244815278",
+      "1776307649208",
+      "1776329651035",
+      "1776399403710",
+      "1776407744403",
+      "1776846803113",
+      "1777001221439",
+      "1777007603106",
+      "1777020758181",
+      "1777200301697",
+      "1777519939050",
+      "1777520869639",
+      "C-Users-17130-AppData-Local-Temp-03e737d9-e3ae-4922-a8d7-d09c84329df0",
+      "C-Users-17130-AppData-Local-Temp-0c3ce42c-d465-4edc-a31c-2e91766ffd31",
+      "C-Users-17130-AppData-Local-Temp-0d902b86-c75e-4b4f-9441-24f6f018fc11",
+      "C-Users-17130-AppData-Local-Temp-0eb4d155-4ecf-4771-87d8-d3c575a37af6",
+      "C-Users-17130-AppData-Local-Temp-1153411b-9bd5-4777-a97b-05ea01a4d9e8",
+      "C-Users-17130-AppData-Local-Temp-1e06c8c5-3e30-4980-b36c-38bdd8e67a1d",
+      "C-Users-17130-AppData-Local-Temp-21a77f22-bb1c-4d08-90f6-ae4014d02b2a",
+      "C-Users-17130-AppData-Local-Temp-2e7e965e-001a-44c4-94dd-442eba4147b4",
+      "C-Users-17130-AppData-Local-Temp-3225dd0b-a467-46bf-8cfa-ecc096e63c9b",
+      "C-Users-17130-AppData-Local-Temp-3c5f190f-f4c2-4d42-8aeb-a9530680557b",
+      "C-Users-17130-AppData-Local-Temp-3d342e8b-1c5a-49ba-9006-8106bd70cd29",
+      "C-Users-17130-AppData-Local-Temp-42d9f215-fa63-4297-ad7e-19620f2296bd",
+      "C-Users-17130-AppData-Local-Temp-46240a96-960a-459a-8fc4-def32fe11516",
+      "C-Users-17130-AppData-Local-Temp-4967da08-852d-45cb-8f9d-7a9fbde4aaea",
+      "C-Users-17130-AppData-Local-Temp-4a1002c6-dbef-496e-aa3e-57db05885cff",
+      "C-Users-17130-AppData-Local-Temp-4ae23473-5ccb-4260-9019-c69ebe28fc49",
+      "C-Users-17130-AppData-Local-Temp-4b8c3cde-7280-41d5-8b05-9c942fc0dc13",
+      "C-Users-17130-AppData-Local-Temp-5119b755-506f-4cfc-8563-127439143c21",
+      "C-Users-17130-AppData-Local-Temp-535e1e9c-083a-4f3e-82a8-2eac3e4b29d8",
+      "C-Users-17130-AppData-Local-Temp-5393fac3-9cec-49fd-b6df-f16f574e12ea",
+      "C-Users-17130-AppData-Local-Temp-6095121f-2569-4283-959b-6ddec30c5410",
+      "C-Users-17130-AppData-Local-Temp-64a7bde6-d695-4468-9a21-0745108b9a10",
+      "C-Users-17130-AppData-Local-Temp-64b2d0ed-68ef-4eef-bb73-471040bea184",
+      "C-Users-17130-AppData-Local-Temp-683c87c7-a393-4db6-b268-52acc7b47d65",
+      "C-Users-17130-AppData-Local-Temp-73f8bf43-b995-4d11-ba86-890b70458ef0",
+      "C-Users-17130-AppData-Local-Temp-7a8c08a9-183d-4b3e-9c27-9a8386e9c40d",
+      "C-Users-17130-AppData-Local-Temp-7fa200f1-68fa-4aeb-a92a-410b61c32065",
+      "C-Users-17130-AppData-Local-Temp-8052f623-c8e5-448e-830a-ed7e634b908d",
+      "C-Users-17130-AppData-Local-Temp-989bac70-e2d3-4b12-b621-e8958ecd06be",
+      "C-Users-17130-AppData-Local-Temp-a38077a0-8124-4cb1-b31c-56a02d407630",
+      "C-Users-17130-AppData-Local-Temp-a3e50418-e388-430b-a2c8-7ca70a23621e",
+      "C-Users-17130-AppData-Local-Temp-a45f8c8f-9e5a-415c-b59a-dc53a2cb227c",
+      "C-Users-17130-AppData-Local-Temp-b4e6de28-ebb1-4ea6-bfc4-b5c9112ae329",
+      "C-Users-17130-AppData-Local-Temp-b9efa212-098f-4ecb-80b4-cda00a058b30",
+      "C-Users-17130-AppData-Local-Temp-c44b4adb-8937-4ddd-9f49-73fc4f2017d7",
+      "C-Users-17130-AppData-Local-Temp-d31df583-ec86-42de-aab9-75ab2d9decf9",
+      "C-Users-17130-AppData-Local-Temp-dcfb33c9-c0e1-428d-987a-b75dde6ff0a4",
+      "C-Users-17130-AppData-Local-Temp-de6bb161-4421-45e8-a0f7-096edc1edfcc",
+      "C-Users-17130-AppData-Local-Temp-e09e6655-849d-4a4e-a178-33934455d5e5",
+      "C-Users-17130-AppData-Local-Temp-e2ebb43d-8d48-48ad-a664-da72d1c008df",
+      "C-Users-17130-AppData-Local-Temp-e7a3cb04-d246-42a6-9893-6d4fba0a62d2",
+      "C-Users-17130-AppData-Local-Temp-e8e2603c-66b4-4a6a-beb7-0d7c15f7d53a",
+      "C-Users-17130-AppData-Local-Temp-ec78ff27-c2d7-41d6-a3d7-7ca3dbfafcad",
+      "C-Users-17130-AppData-Local-Temp-ecdc46c3-90d2-4ec8-bf17-df2e3244b10a",
+      "C-Users-17130-AppData-Local-Temp-f524d841-0afb-44e7-9dc1-d518274aa24d",
+      "C-Users-17130-AppData-Local-Temp-fdc60056-792e-4519-8733-2197eae000e5",
+      "c-Users-17130-Desktop-Clash-for-Windows-Chinese-main",
+      "c-Users-17130-Desktop-Programming-Projects-personal-projects-agent-track-agent-track-npc-version",
+      "c-Users-17130-Desktop-Programming-Projects-personal-projects-agent-track-AI",
+      "c-Users-17130-Desktop-Programming-Projects-personal-projects-agent-track-v1",
+      "c-Users-17130-Desktop-Programming-Projects-personal-projects-agent-track-v1-5",
+      "c-Users-17130-Desktop-Programming-Projects-personal-projects-AI",
+      "c-Users-17130-Desktop-Programming-Projects-personal-projects-auto-agent",
+      "c-Users-17130-Desktop-Programming-Projects-personal-projects-llm-api-test-app",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-06-Archived",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-AIRecordMoney",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-auto-agent",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-awesome-llm-apps",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-develop-template",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-fetch-video",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-kit-develop-mode",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-knowledge-lib",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-Learn-Agent-practices-practice10-accounting-agent-v0",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-Learn-Agent-practices-practice11-personal-knowledge-lib",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-Learn-Agent-practices-practice7-ai-blog-to-podcast-agent",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-learn-claude-skill",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-Learn-data-model",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-Learn-file-storage-system",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-Learn-Workflow",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-long-novel-gpt",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-my-chat-gpt",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-novel-generator",
+      "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-stack-roadmap",
+      "c-Users-17130-Desktop-Projects",
+      "c-Users-17130-OneDrive-Desktop-ProgrammingProjects-personal-projects-auto-agent",
+      "d-Desktop-ProgrammingProjects-personal-projects-03-In-Development",
+      "d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-habit-tracker-experiment",
+      "d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-karl-AIs",
+      "d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-karl-AIs-market",
+      "d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-learning-archive",
+      "d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-OpenHands"
+    ],
+    "slugCount": 110,
+    "slugInfos": [
+      {
+        "slug": "c-Projects-ELApp",
+        "transcriptCount": 0,
+        "jsonlDirCount": 0,
+        "jsonlFileCount": 0,
+        "txtCount": 0,
+        "sampleFirstLine": null,
+        "txtSample": null
+      },
+      {
+        "slug": "c-Users-17130-AppData-Roaming-Cursor-Workspaces-1767683843515-workspace-json",
+        "transcriptCount": 0,
+        "jsonlDirCount": 0,
+        "jsonlFileCount": 0,
+        "txtCount": 0,
+        "sampleFirstLine": null,
+        "txtSample": null
+      },
+      {
+        "slug": "c-Users-17130-Desktop-ProgrammingProjects-personal-projects-Learn-Agent",
+        "transcriptCount": 0,
+        "jsonlDirCount": 0,
+        "jsonlFileCount": 0,
+        "txtCount": 0,
+        "sampleFirstLine": null,
+        "txtSample": null
+      },
+      {
+        "slug": "c-Users-17130-Desktop-Projects-Learn-Agent",
+        "transcriptCount": 0,
+        "jsonlDirCount": 0,
+        "jsonlFileCount": 0,
+        "txtCount": 0,
+        "sampleFirstLine": null,
+        "txtSample": null
+      },
+      {
+        "slug": "d-Desktop-ProgrammingProjects-personal-projects-01-Learning-AI-Architect",
+        "transcriptCount": 2,
+        "jsonlDirCount": 1,
+        "jsonlFileCount": 0,
+        "txtCount": 1,
+        "sampleFirstLine": {
+          "transcriptId": "7252182c-ba22-4d25-8306-d34b3fc37527",
+          "role": "user",
+          "topKeys": [
+            "role",
+            "message"
+          ],
+          "hasCwd": false,
+          "hasTimestamp": false,
+          "messageKeys": [
+            "content"
+          ]
+        },
+        "txtSample": {
+          "file": "6d689934-e463-4968-b8ec-ed64eef2324a.txt",
+          "size": 77789,
+          "firstChars": "user:\n<attached_files>\n\n<code_selection path=\"d:\\Desktop\\ProgrammingProjects\\personal-projects\\01-Learning\\AI Architect 课程\\4.AI Architect 课程\\1.Introduction\\2.Become an AI Architect\\文字版.md\" lines=\"1-22"
+        }
+      },
+      {
+        "slug": "d-Desktop-ProgrammingProjects-personal-projects-02-Experiments",
+        "transcriptCount": 7,
+        "jsonlDirCount": 4,
+        "jsonlFileCount": 0,
+        "txtCount": 3,
+        "sampleFirstLine": {
+          "transcriptId": "59c197d1-32ce-4c27-ad1e-f1a865db29ed",
+          "role": "user",
+          "topKeys": [
+            "role",
+            "message"
+          ],
+          "hasCwd": false,
+          "hasTimestamp": false,
+          "messageKeys": [
+            "content"
+          ]
+        },
+        "txtSample": {
+          "file": "53af7ec8-7372-4892-967d-4c75035f649a.txt",
+          "size": 14320,
+          "firstChars": "user:\n<external_links>\n### Potentially Relevant Websearch Results\n\nYou should respond as if these information are known to you. Refrain from saying \"I am unable to browse the internet\" or \"I don't hav"
+        }
+      },
+      {
+        "slug": "d-Desktop-ProgrammingProjects-personal-projects-02-Experiments-little-gold-teacher",
+        "transcriptCount": 0,
+        "jsonlDirCount": 0,
+        "jsonlFileCount": 0,
+        "txtCount": 0,
+        "sampleFirstLine": null,
+        "txtSample": null
+      },
+      {
+        "slug": "d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-matters",
+        "transcriptCount": 0,
+        "jsonlDirCount": 0,
+        "jsonlFileCount": 0,
+        "txtCount": 0,
+        "sampleFirstLine": null,
+        "txtSample": null
+      },
+      {
+        "slug": "d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-projct-pilot",
+        "transcriptCount": 0,
+        "jsonlDirCount": 0,
+        "jsonlFileCount": 0,
+        "txtCount": 0,
+        "sampleFirstLine": null,
+        "txtSample": null
+      },
+      {
+        "slug": "d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-projct-pilot-dev",
+        "transcriptCount": 0,
+        "jsonlDirCount": 0,
+        "jsonlFileCount": 0,
+        "txtCount": 0,
+        "sampleFirstLine": null,
+        "txtSample": null
+      },
+      {
+        "slug": "d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-project-pilot",
+        "transcriptCount": 102,
+        "jsonlDirCount": 96,
+        "jsonlFileCount": 0,
+        "txtCount": 8,
+        "sampleFirstLine": {
+          "transcriptId": "00359ca6-b5aa-45aa-a4c9-a5524d85e94d",
+          "role": "user",
+          "topKeys": [
+            "role",
+            "message"
+          ],
+          "hasCwd": false,
+          "hasTimestamp": false,
+          "messageKeys": [
+            "content"
+          ]
+        },
+        "txtSample": {
+          "file": "2a4b7ae4-3711-45f0-a7ce-a2d0e575946f.txt",
+          "size": 3065,
+          "firstChars": "user:\n<user_query>\n@develop-static/docs/roadmap/A2-系统核心循环.md 去做这个任务吧\n</user_query>\n\nassistant:\n[Thinking]\n正在阅读路线图文档以明确任务范围。\n[Tool call] Read\n  path: d:\\Desktop\\ProgrammingProjects\\personal-projects\\03"
+        }
+      },
+      {
+        "slug": "empty-window",
+        "transcriptCount": 17,
+        "jsonlDirCount": 17,
+        "jsonlFileCount": 0,
+        "txtCount": 0,
+        "sampleFirstLine": {
+          "transcriptId": "1b9a067f-d907-425e-be1c-9a7e9db8d919",
+          "role": "user",
+          "topKeys": [
+            "role",
+            "message"
+          ],
+          "hasCwd": false,
+          "hasTimestamp": false,
+          "messageKeys": [
+            "content"
+          ]
+        },
+        "txtSample": null
+      }
+    ]
+  },
+  "gemini": {},
+  "opencode": {
+    "exists": false,
+    "expectedPath": "C:\\Users\\17130\\AppData\\Local\\opencode"
+  }
+}

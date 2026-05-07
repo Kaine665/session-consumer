@@ -1,0 +1,236 @@
+=== RAW COUNTS ===
+Claude Code slugs: 38
+Codex unique cwds: 5
+Cursor slugs: 110
+
+=== CLAUDE CODE SLUGS ===
+  ✓ c--Projects-ELApp
+    → c:\Projects\ELApp  [fs-resolved]
+    segments: Projects | ELApp
+  ✗ C--Projects-ELApp--worktrees-59631478-59631478-fix-chapter-white-screen
+    ✗ unresolved  (blind: C:\Projects\ELApp\\worktrees\59631478\59631478\fix\chapter\white\screen | closest: C:\Projects\ELApp\)
+  ✗ C--Projects-ELApp--worktrees-orch-3-paau-habit-data-layer
+    ✗ unresolved  (blind: C:\Projects\ELApp\\worktrees\orch\3\paau\habit\data\layer | closest: C:\Projects\ELApp\)
+  ✗ C--Projects-ELApp--worktrees-orch-3-paau-habit-pages
+    ✗ unresolved  (blind: C:\Projects\ELApp\\worktrees\orch\3\paau\habit\pages | closest: C:\Projects\ELApp\)
+  ✗ C--Projects-ELApp--worktrees-orch-3-paau-habit-ui-components
+    ✗ unresolved  (blind: C:\Projects\ELApp\\worktrees\orch\3\paau\habit\ui\components | closest: C:\Projects\ELApp\)
+  ✓ C--Users-17130
+    → C:\Users\17130  [fs-resolved]
+    segments: Users | 17130
+  ✓ C--Users-17130--myagents-projects
+    → C:\Users\17130\.myagents\projects  [fs-resolved]
+    segments: Users | 17130 | .myagents | projects
+  ✓ C--Users-17130--myagents-projects------
+    → C:\Users\17130\.myagents\projects\.\.\.  [fs-resolved]
+    segments: Users | 17130 | .myagents | projects | . | . | .
+  ✓ C--Users-17130--myagents-projects-mino
+    → C:\Users\17130\.myagents\projects\mino  [fs-resolved]
+    segments: Users | 17130 | .myagents | projects | mino
+  ✓ C--Users-17130--myagents-projects-mino-3
+    → C:\Users\17130\.myagents\projects\mino-3  [fs-resolved]
+    segments: Users | 17130 | .myagents | projects | mino-3
+  ✗ C--Users-17130--proma-agent-workspaces-default-a9d0a6a8-2287-4e4e-9fee-f62e484547d4
+    ✗ unresolved  (blind: C:\Users\17130\\proma\agent\workspaces\default\a9d0a6a8\2287\4e4e\9fee\f62e484547d4 | closest: C:\Users\17130\)
+  ✗ C--Users-17130-Desktop-ProgrammingProjects-personal-projects-02-Experiments
+    ✗ unresolved  (blind: C:\Users\17130\Desktop\ProgrammingProjects\personal\projects\02\Experiments | closest: C:\Users\17130\Desktop)
+  ✗ c--Users-17130-Desktop-ProgrammingProjects-personal-projects-03-In-Development
+    ✗ unresolved  (blind: c:\Users\17130\Desktop\ProgrammingProjects\personal\projects\03\In\Development | closest: c:\Users\17130\Desktop)
+  ✗ C--Users-17130-Desktop-ProgrammingProjects-personal-projects-03-In-Development-lifecard
+    ✗ unresolved  (blind: C:\Users\17130\Desktop\ProgrammingProjects\personal\projects\03\In\Development\lifecard | closest: C:\Users\17130\Desktop)
+  ✗ C--Users-17130-Desktop-ProgrammingProjects-personal-projects-03-In-Development-matters
+    ✗ unresolved  (blind: C:\Users\17130\Desktop\ProgrammingProjects\personal\projects\03\In\Development\matters | closest: C:\Users\17130\Desktop)
+  ✗ C--Users-17130-Desktop-ProgrammingProjects-personal-projects-03-In-Development-voice-claude
+    ✗ unresolved  (blind: C:\Users\17130\Desktop\ProgrammingProjects\personal\projects\03\In\Development\voice\claude | closest: C:\Users\17130\Desktop)
+  ✗ C--Users-17130-Desktop-ProgrammingProjects-personal-projects-05-Libraries
+    ✗ unresolved  (blind: C:\Users\17130\Desktop\ProgrammingProjects\personal\projects\05\Libraries | closest: C:\Users\17130\Desktop)
+  ✗ C--Users-17130-Desktop-ProgrammingProjects-personal-projects-06-Archived
+    ✗ unresolved  (blind: C:\Users\17130\Desktop\ProgrammingProjects\personal\projects\06\Archived | closest: C:\Users\17130\Desktop)
+  ✗ C--Users-17130-Desktop-ProgrammingProjects-personal-projects-fetch-video
+    ✗ unresolved  (blind: C:\Users\17130\Desktop\ProgrammingProjects\personal\projects\fetch\video | closest: C:\Users\17130\Desktop)
+  ✗ C--Users-17130-Desktop-ProgrammingProjects-personal-projects-knowledge-lib
+    ✗ unresolved  (blind: C:\Users\17130\Desktop\ProgrammingProjects\personal\projects\knowledge\lib | closest: C:\Users\17130\Desktop)
+  ✗ C--Users-17130-Desktop-ProgrammingProjects-personal-projects-lifecard
+    ✗ unresolved  (blind: C:\Users\17130\Desktop\ProgrammingProjects\personal\projects\lifecard | closest: C:\Users\17130\Desktop)
+  ✓ d--Desktop-ProgrammingProjects-personal-projects-03-In-Development
+    → d:\Desktop\ProgrammingProjects\personal-projects\03-In-Development  [fs-resolved]
+    segments: Desktop | ProgrammingProjects | personal-projects | 03-In-Development
+  ✓ d--Desktop-ProgrammingProjects-personal-projects-03-In-Development-aha-catcher-frictionless
+    → d:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\aha-catcher-frictionless  [fs-resolved]
+    segments: Desktop | ProgrammingProjects | personal-projects | 03-In-Development | aha-catcher-frictionless
+  ✓ D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-habit-tracker-experiment
+    → D:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\habit-tracker-experiment  [fs-resolved]
+    segments: Desktop | ProgrammingProjects | personal-projects | 03-In-Development | habit-tracker-experiment
+  ✓ d--Desktop-ProgrammingProjects-personal-projects-03-In-Development-learning-archive
+    → d:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\learning-archive  [fs-resolved]
+    segments: Desktop | ProgrammingProjects | personal-projects | 03-In-Development | learning-archive
+  ✓ D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-learning-archive-library-books
+    → D:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\learning-archive\library\books  [fs-resolved]
+    segments: Desktop | ProgrammingProjects | personal-projects | 03-In-Development | learning-archive | library | books
+  ✓ D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-learning-archive-probing-tasks
+    → D:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\learning-archive\probing\tasks  [fs-resolved]
+    segments: Desktop | ProgrammingProjects | personal-projects | 03-In-Development | learning-archive | probing | tasks
+  ✓ D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-matters
+    → D:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\matters  [fs-resolved]
+    segments: Desktop | ProgrammingProjects | personal-projects | 03-In-Development | matters
+  ✓ d--Desktop-ProgrammingProjects-personal-projects-03-In-Development-OpenHands
+    → d:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\OpenHands  [fs-resolved]
+    segments: Desktop | ProgrammingProjects | personal-projects | 03-In-Development | OpenHands
+  ✗ d--Desktop-ProgrammingProjects-personal-projects-03-In-Development-projct-pilot
+    ✗ unresolved  (blind: d:\Desktop\ProgrammingProjects\personal\projects\03\In\Development\projct\pilot | closest: d:\Desktop\ProgrammingProjects)
+  ✗ D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-projct-pilot--worktrees-dev
+    ✗ unresolved  (blind: D:\Desktop\ProgrammingProjects\personal\projects\03\In\Development\projct\pilot\\worktrees\dev | closest: D:\Desktop\ProgrammingProjects)
+  ✗ d--Desktop-ProgrammingProjects-personal-projects-03-In-Development-projct-pilot-dev
+    ✗ unresolved  (blind: d:\Desktop\ProgrammingProjects\personal\projects\03\In\Development\projct\pilot\dev | closest: d:\Desktop\ProgrammingProjects)
+  ✓ d--Desktop-ProgrammingProjects-personal-projects-03-In-Development-project-pilot
+    → d:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\project-pilot  [fs-resolved]
+    segments: Desktop | ProgrammingProjects | personal-projects | 03-In-Development | project-pilot
+  ✗ D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-project-pilot-agent-teams-probe-260303
+    ✗ unresolved  (blind: D:\Desktop\ProgrammingProjects\personal\projects\03\In\Development\project\pilot\agent\teams\probe\260303 | closest: D:\Desktop\ProgrammingProjects)
+  ✗ D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-project-pilot-develop-static
+    ✗ unresolved  (blind: D:\Desktop\ProgrammingProjects\personal\projects\03\In\Development\project\pilot\develop\static | closest: D:\Desktop\ProgrammingProjects)
+  ✗ D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-project-pilot-develop-static--claude-worktrees-agent-dialogue
+    ✗ unresolved  (blind: D:\Desktop\ProgrammingProjects\personal\projects\03\In\Development\project\pilot\develop\static\\claude\worktrees\agent\dialogue | closest: D:\Desktop\ProgrammingProjects)
+  ✓ D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-project-pilot-test
+    → D:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\project-pilot\test  [fs-resolved]
+    segments: Desktop | ProgrammingProjects | personal-projects | 03-In-Development | project-pilot | test
+  ✓ D--Desktop-ProgrammingProjects-personal-projects-03-In-Development-react-blog
+    → D:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\react-blog  [fs-resolved]
+    segments: Desktop | ProgrammingProjects | personal-projects | 03-In-Development | react-blog
+
+=== CODEX CWDs ===
+  ✓ c:\projects\elapp
+  ✓ d:\desktop\programmingprojects\market\zhijian-app
+  ✓ d:\desktop\programmingprojects\personal-projects\03-in-development\project-pilot
+  ✗ d:\desktop\programmingprojects\personal-projects\03-in-development\project-pilot\develop-static
+  ✓ d:\desktop\programmingprojects\personal-projects\03-in-development\project-pilot\test
+  (0 sessions with null cwd)
+
+=== CURSOR SLUGS ===
+  ✗ 1775207545903
+  ✗ 1775540178971
+  ✗ 1775992263690
+  ✗ 1776240776655
+  ✗ 1776244815278
+  ✗ 1776307649208
+  ✗ 1776329651035
+  ✗ 1776399403710
+  ✗ 1776407744403
+  ✗ 1776846803113
+  ✗ 1777001221439
+  ✗ 1777007603106
+  ✗ 1777020758181
+  ✗ 1777200301697
+  ✗ 1777519939050
+  ✗ 1777520869639
+  ✓ c-Projects-ELApp
+    → c:\Projects\ELApp  [fs-resolved]
+  ✗ C-Users-17130-AppData-Local-Temp-03e737d9-e3ae-4922-a8d7-d09c84329df0
+  ✗ C-Users-17130-AppData-Local-Temp-0c3ce42c-d465-4edc-a31c-2e91766ffd31
+  ✗ C-Users-17130-AppData-Local-Temp-0d902b86-c75e-4b4f-9441-24f6f018fc11
+  ✗ C-Users-17130-AppData-Local-Temp-0eb4d155-4ecf-4771-87d8-d3c575a37af6
+  ✗ C-Users-17130-AppData-Local-Temp-1153411b-9bd5-4777-a97b-05ea01a4d9e8
+  ✗ C-Users-17130-AppData-Local-Temp-1e06c8c5-3e30-4980-b36c-38bdd8e67a1d
+  ✗ C-Users-17130-AppData-Local-Temp-21a77f22-bb1c-4d08-90f6-ae4014d02b2a
+  ✗ C-Users-17130-AppData-Local-Temp-2e7e965e-001a-44c4-94dd-442eba4147b4
+  ✗ C-Users-17130-AppData-Local-Temp-3225dd0b-a467-46bf-8cfa-ecc096e63c9b
+  ✗ C-Users-17130-AppData-Local-Temp-3c5f190f-f4c2-4d42-8aeb-a9530680557b
+  ✗ C-Users-17130-AppData-Local-Temp-3d342e8b-1c5a-49ba-9006-8106bd70cd29
+  ✗ C-Users-17130-AppData-Local-Temp-42d9f215-fa63-4297-ad7e-19620f2296bd
+  ✗ C-Users-17130-AppData-Local-Temp-46240a96-960a-459a-8fc4-def32fe11516
+  ✗ C-Users-17130-AppData-Local-Temp-4967da08-852d-45cb-8f9d-7a9fbde4aaea
+  ✗ C-Users-17130-AppData-Local-Temp-4a1002c6-dbef-496e-aa3e-57db05885cff
+  ✗ C-Users-17130-AppData-Local-Temp-4ae23473-5ccb-4260-9019-c69ebe28fc49
+  ✗ C-Users-17130-AppData-Local-Temp-4b8c3cde-7280-41d5-8b05-9c942fc0dc13
+  ✗ C-Users-17130-AppData-Local-Temp-5119b755-506f-4cfc-8563-127439143c21
+  ✗ C-Users-17130-AppData-Local-Temp-535e1e9c-083a-4f3e-82a8-2eac3e4b29d8
+  ✗ C-Users-17130-AppData-Local-Temp-5393fac3-9cec-49fd-b6df-f16f574e12ea
+  ✗ C-Users-17130-AppData-Local-Temp-6095121f-2569-4283-959b-6ddec30c5410
+  ✗ C-Users-17130-AppData-Local-Temp-64a7bde6-d695-4468-9a21-0745108b9a10
+  ✗ C-Users-17130-AppData-Local-Temp-64b2d0ed-68ef-4eef-bb73-471040bea184
+  ✗ C-Users-17130-AppData-Local-Temp-683c87c7-a393-4db6-b268-52acc7b47d65
+  ✗ C-Users-17130-AppData-Local-Temp-73f8bf43-b995-4d11-ba86-890b70458ef0
+  ✗ C-Users-17130-AppData-Local-Temp-7a8c08a9-183d-4b3e-9c27-9a8386e9c40d
+  ✗ C-Users-17130-AppData-Local-Temp-7fa200f1-68fa-4aeb-a92a-410b61c32065
+  ✗ C-Users-17130-AppData-Local-Temp-8052f623-c8e5-448e-830a-ed7e634b908d
+  ✗ C-Users-17130-AppData-Local-Temp-989bac70-e2d3-4b12-b621-e8958ecd06be
+  ✗ C-Users-17130-AppData-Local-Temp-a38077a0-8124-4cb1-b31c-56a02d407630
+  ✗ C-Users-17130-AppData-Local-Temp-a3e50418-e388-430b-a2c8-7ca70a23621e
+  ✗ C-Users-17130-AppData-Local-Temp-a45f8c8f-9e5a-415c-b59a-dc53a2cb227c
+  ✗ C-Users-17130-AppData-Local-Temp-b4e6de28-ebb1-4ea6-bfc4-b5c9112ae329
+  ✗ C-Users-17130-AppData-Local-Temp-b9efa212-098f-4ecb-80b4-cda00a058b30
+  ✗ C-Users-17130-AppData-Local-Temp-c44b4adb-8937-4ddd-9f49-73fc4f2017d7
+  ✗ C-Users-17130-AppData-Local-Temp-d31df583-ec86-42de-aab9-75ab2d9decf9
+  ✗ C-Users-17130-AppData-Local-Temp-dcfb33c9-c0e1-428d-987a-b75dde6ff0a4
+  ✗ C-Users-17130-AppData-Local-Temp-de6bb161-4421-45e8-a0f7-096edc1edfcc
+  ✗ C-Users-17130-AppData-Local-Temp-e09e6655-849d-4a4e-a178-33934455d5e5
+  ✗ C-Users-17130-AppData-Local-Temp-e2ebb43d-8d48-48ad-a664-da72d1c008df
+  ✗ C-Users-17130-AppData-Local-Temp-e7a3cb04-d246-42a6-9893-6d4fba0a62d2
+  ✗ C-Users-17130-AppData-Local-Temp-e8e2603c-66b4-4a6a-beb7-0d7c15f7d53a
+  ✗ C-Users-17130-AppData-Local-Temp-ec78ff27-c2d7-41d6-a3d7-7ca3dbfafcad
+  ✗ C-Users-17130-AppData-Local-Temp-ecdc46c3-90d2-4ec8-bf17-df2e3244b10a
+  ✗ C-Users-17130-AppData-Local-Temp-f524d841-0afb-44e7-9dc1-d518274aa24d
+  ✗ C-Users-17130-AppData-Local-Temp-fdc60056-792e-4519-8733-2197eae000e5
+  ✗ c-Users-17130-AppData-Roaming-Cursor-Workspaces-1767683843515-workspace-json
+  ✗ c-Users-17130-Desktop-Clash-for-Windows-Chinese-main
+  ✗ c-Users-17130-Desktop-Programming-Projects-personal-projects-agent-track-agent-track-npc-version
+  ✗ c-Users-17130-Desktop-Programming-Projects-personal-projects-agent-track-AI
+  ✗ c-Users-17130-Desktop-Programming-Projects-personal-projects-agent-track-v1
+  ✗ c-Users-17130-Desktop-Programming-Projects-personal-projects-agent-track-v1-5
+  ✗ c-Users-17130-Desktop-Programming-Projects-personal-projects-AI
+  ✗ c-Users-17130-Desktop-Programming-Projects-personal-projects-auto-agent
+  ✗ c-Users-17130-Desktop-Programming-Projects-personal-projects-llm-api-test-app
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-06-Archived
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-AIRecordMoney
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-auto-agent
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-awesome-llm-apps
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-develop-template
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-fetch-video
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-kit-develop-mode
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-knowledge-lib
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-Learn-Agent
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-Learn-Agent-practices-practice10-accounting-agent-v0
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-Learn-Agent-practices-practice11-personal-knowledge-lib
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-Learn-Agent-practices-practice7-ai-blog-to-podcast-agent
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-learn-claude-skill
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-Learn-data-model
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-Learn-file-storage-system
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-Learn-Workflow
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-long-novel-gpt
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-my-chat-gpt
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-novel-generator
+  ✗ c-Users-17130-Desktop-ProgrammingProjects-personal-projects-stack-roadmap
+  ✗ c-Users-17130-Desktop-Projects
+  ✗ c-Users-17130-Desktop-Projects-Learn-Agent
+  ✓ c-Users-17130-OneDrive-Desktop-ProgrammingProjects-personal-projects-auto-agent
+    → c:\Users\17130\OneDrive\Desktop\ProgrammingProjects\personal-projects\auto-agent  [fs-resolved]
+  ✗ d-Desktop-ProgrammingProjects-personal-projects-01-Learning-AI-Architect
+  ✓ d-Desktop-ProgrammingProjects-personal-projects-02-Experiments
+    → d:\Desktop\ProgrammingProjects\personal-projects\02-Experiments  [fs-resolved]
+  ✓ d-Desktop-ProgrammingProjects-personal-projects-02-Experiments-little-gold-teacher
+    → d:\Desktop\ProgrammingProjects\personal-projects\02-Experiments\little-gold-teacher  [fs-resolved]
+  ✓ d-Desktop-ProgrammingProjects-personal-projects-03-In-Development
+    → d:\Desktop\ProgrammingProjects\personal-projects\03-In-Development  [fs-resolved]
+  ✓ d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-habit-tracker-experiment
+    → d:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\habit-tracker-experiment  [fs-resolved]
+  ✓ d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-karl-AIs
+    → d:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\karl-AIs  [fs-resolved]
+  ✓ d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-karl-AIs-market
+    → d:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\karl-AIs\market  [fs-resolved]
+  ✓ d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-learning-archive
+    → d:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\learning-archive  [fs-resolved]
+  ✓ d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-matters
+    → d:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\matters  [fs-resolved]
+  ✓ d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-OpenHands
+    → d:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\OpenHands  [fs-resolved]
+  ✗ d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-projct-pilot
+  ✗ d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-projct-pilot-dev
+  ✓ d-Desktop-ProgrammingProjects-personal-projects-03-In-Development-project-pilot
+    → d:\Desktop\ProgrammingProjects\personal-projects\03-In-Development\project-pilot  [fs-resolved]
+  · empty-window
+
+=== SUMMARY ===
+Claude Code: 17/38 resolved
+Codex cwds: 4/5 exist on disk
+Cursor: 13/110 resolved

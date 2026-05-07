@@ -1,0 +1,21 @@
+{
+  "name": "@sc/timeline",
+  "version": "0.1.0",
+  "description": "Cross-tool AI conversation timeline — join, filter, group, and analyze",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sc/core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
